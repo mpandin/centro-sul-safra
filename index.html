@@ -233,9 +233,9 @@
       <h1>O ritmo da moagem, do açúcar e do etanol, safra a safra.</h1>
       <p class="lede">Acompanhe a produção das usinas do Centro-Sul, a evolução da moagem quinzenal, os efeitos climáticos sobre o canavial e a previsão de encerramento da safra 2026.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b class="mono">625–639 Mt</b><span>moagem projetada 2026/27</span></div>
-        <div class="hero-stat"><b class="mono">+19,7%</b><span>moagem 1ª quinz. abr/26 vs 2025</span></div>
-        <div class="hero-stat"><b class="mono">~77 t/ha</b><span>produtividade agrícola estimada</span></div>
+        <div class="hero-stat"><b class="mono" data-field="heroMoagemProjetada">625–639 Mt</b><span>moagem projetada 2026/27</span></div>
+        <div class="hero-stat"><b class="mono" data-field="heroVariacaoQuinzenaAbertura">+19,7%</b><span>moagem 1ª quinz. abr/26 vs 2025</span></div>
+        <div class="hero-stat"><b class="mono" data-field="heroProdutividadeEstimada">~77 t/ha</b><span>produtividade agrícola estimada</span></div>
       </div>
     </div>
 
@@ -256,8 +256,8 @@
   <div class="wrap">
     <div class="section-head">
       <div class="eyebrow">Painel de produção</div>
-      <h2>Safra 2025/26 encerrada vs. safra 2026/27 em curso</h2>
-      <p>Números consolidados do ciclo encerrado em abril de 2026 e as primeiras leituras do novo ciclo, iniciado no mesmo mês.</p>
+      <h2>Safra 2026/27 em curso — projeções vs. safra 2025/26 encerrada</h2>
+      <p>Projeções para o ciclo em andamento (iniciado em abril de 2026), comparadas ao resultado final já consolidado da safra anterior.</p>
     </div>
 
     <div class="kpi-grid">
@@ -265,38 +265,39 @@
         <div class="icon" style="background:var(--sage-pale);">
           <svg viewBox="0 0 24 24" fill="none" stroke="#5F7F5C" stroke-width="1.8"><path d="M3 12h18M3 6h18M3 18h18" stroke-linecap="round"/></svg>
         </div>
-        <div class="kpi-value mono">611,15 Mt</div>
-        <div class="kpi-label">Moagem total · safra 2025/26</div>
-        <span class="kpi-delta down">▾ 1,7% vs 2024/25</span>
+        <div class="kpi-value mono" data-field="kpiMoagemTotal">632 Mt</div>
+        <div class="kpi-label">Moagem projetada · safra 2026/27</div>
+        <span class="kpi-delta up" data-field="kpiMoagemVariacao">▴ 3,4% vs 2025/26</span>
       </div>
 
       <div class="kpi-card">
         <div class="icon" style="background:var(--caramel-pale);">
           <svg viewBox="0 0 24 24" fill="none" stroke="#A8763F" stroke-width="1.8"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
         </div>
-        <div class="kpi-value mono">40,43 Mt</div>
-        <div class="kpi-label">Açúcar produzido · 2025/26</div>
-        <span class="kpi-delta up">▴ 0,6% vs 2024/25</span>
+        <div class="kpi-value mono" data-field="kpiAcucarTotal">41,5 Mt</div>
+        <div class="kpi-label">Açúcar projetado · 2026/27</div>
+        <span class="kpi-delta up" data-field="kpiAcucarVariacao">▴ 2,6% vs 2025/26</span>
       </div>
 
       <div class="kpi-card">
         <div class="icon" style="background:var(--sky-pale);">
           <svg viewBox="0 0 24 24" fill="none" stroke="#4C7E92" stroke-width="1.8"><path d="M12 3c3 3 5 6.5 5 10a5 5 0 0 1-10 0c0-3.5 2-7 5-10Z"/></svg>
         </div>
-        <div class="kpi-value mono">33,72 bi L</div>
-        <div class="kpi-label">Etanol total · 2025/26</div>
-        <span class="kpi-delta down">▾ 3,6% vs 2024/25</span>
+        <div class="kpi-value mono" data-field="kpiEtanolTotal">35,3 bi L</div>
+        <div class="kpi-label">Etanol projetado · 2026/27</div>
+        <span class="kpi-delta up" data-field="kpiEtanolVariacao">▴ 4,7% vs 2025/26</span>
       </div>
 
       <div class="kpi-card">
         <div class="icon" style="background:var(--coral-pale);">
           <svg viewBox="0 0 24 24" fill="none" stroke="#A85B4C" stroke-width="1.8"><path d="M4 19V5M4 19h16M8 15l3-4 3 3 4-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <div class="kpi-value mono">137,8 kg/t</div>
-        <div class="kpi-label">ATR médio · 2025/26</div>
-        <span class="kpi-delta down">▾ 2,3% vs 2024/25</span>
+        <div class="kpi-value mono" data-field="kpiAtrMedio">139,5 kg/t</div>
+        <div class="kpi-label">ATR médio projetado · 2026/27</div>
+        <span class="kpi-delta up" data-field="kpiAtrVariacao">▴ 1,2% vs 2025/26</span>
       </div>
     </div>
+    <p class="regional-note" style="margin-top:14px;">Base de comparação: safra 2025/26 encerrada (dado real, UNICA). Valores de 2026/27 são projeções de mercado (Datagro/SCA Brasil) e serão substituídos por dados realizados conforme as quinzenas forem divulgadas.</p>
 
     <div class="charts-grid" style="margin-top:20px;">
       <div class="card">
@@ -432,6 +433,83 @@
 </footer>
 
 <script>
+  /* ======================================================================
+     BLOCO ÚNICO DE DADOS — atualize SOMENTE esta seção a cada quinzena.
+     Nada abaixo desta seção precisa ser tocado; os gráficos e o painel
+     leem tudo daqui. Fontes indicadas em cada campo.
+     ====================================================================== */
+  const SITE_DATA = {
+
+    // Data do último boletim usado para preencher este arquivo.
+    ultimaAtualizacao: '2026-07-06',
+
+    // Data de referência "hoje" mostrada na barra de calendário da safra.
+    hoje: '2026-07-06',
+
+    // Janela oficial da safra 2026/27. Início: UNICA (1º de abril).
+    // Fim: estimativa de mercado, ajuste conforme boletins apontarem.
+    safraInicio: '2026-04-01',
+    safraFimEstimado: '2026-12-15',
+
+    // ---- Cartões de destaque no topo (hero) ----
+    // Fonte: UNICA (moagem quinzenal) + Datagro/SCA Brasil (projeção)
+    heroMoagemProjetada: '625–639 Mt',
+    heroVariacaoQuinzenaAbertura: '+19,7%',
+    heroProdutividadeEstimada: '~77 t/ha',
+
+    // ---- KPIs: PROJEÇÃO da safra EM CURSO (2026/27) vs. REALIZADO 2025/26 ----
+    // Projeções: Datagro / SCA Brasil. Base de comparação (2025/26): UNICA, fechamento de safra.
+    // >>> Conforme cada quinzena de 2026/27 for divulgada pela UNICA, ajuste estes valores <<<
+    kpiMoagemTotal: '632 Mt',
+    kpiMoagemVariacao: '▴ 3,4% vs 2025/26',
+    kpiAcucarTotal: '41,5 Mt',
+    kpiAcucarVariacao: '▴ 2,6% vs 2025/26',
+    kpiEtanolTotal: '35,3 bi L',
+    kpiEtanolVariacao: '▴ 4,7% vs 2025/26',
+    kpiAtrMedio: '139,5 kg/t',
+    kpiAtrVariacao: '▴ 1,2% vs 2025/26',
+
+    // ---- Gráfico: moagem histórica + projeção (Mt) ----
+    // Fonte: UNICA (histórico) + Datagro/SCA Brasil (projeção 2026/27)
+    moagemLabels: ['2023/24', '2024/25', '2025/26', '2026/27 (proj.)'],
+    moagemValores: [597.4, 621.93, 611.15, 632],
+
+    // ---- Gráfico: mix açúcar x etanol (%) — safra em curso ----
+    // Fonte: SCA Brasil / Datagro
+    mixAcucarPct: 48,
+    mixEtanolPct: 52,
+
+    // ---- Gráfico: etanol hidratado x anidro (bi litros) — 2025/26 ----
+    // Fonte: UNICA, boletim de fechamento de safra
+    etanolHidratado: 20.83,
+    etanolAnidro: 12.89,
+
+    // ---- Gráfico: moagem quinzenal de abertura de safra (Mt) ----
+    // Fonte: UNICA — este é o número que muda a cada nova quinzena
+    quinzenaLabelAnterior: '1ª quinz. abr — 2025/26',
+    quinzenaValorAnterior: 16.68,
+    quinzenaLabelAtual: '1ª quinz. abr — 2026/27',
+    quinzenaValorAtual: 19.56,
+
+    // ---- Gráfico: panorama regional — variação de produtividade (%) ----
+    // Fonte: CTC (Centro de Tecnologia Canavieira), via UNICA
+    regionalLabels: ['Paraná', 'Mato Grosso do Sul', 'Mato Grosso', 'São Paulo', 'Goiás', 'Minas Gerais'],
+    regionalValores: [15.5, 6.0, 3.2, -4.3, -9.4, -15.9],
+
+    // ---- Gráfico: chuva esperada vs média histórica (índice, 100=média) ----
+    // Fonte: estimativa ilustrativa com base em boletins climáticos
+    chuvaLabels: ['Out', 'Nov', 'Dez', 'Jan', 'Fev', 'Mar'],
+    chuvaMedia: [100, 100, 100, 100, 100, 100],
+    chuvaCenario: [96, 90, 82, 74, 80, 88],
+
+    // ---- Previsão de fim de safra (cartões de texto) ----
+    faixaMoagemMin: '600 Mt',
+    faixaMoagemMedia: '~630 Mt',
+    faixaMoagemMax: '639 Mt'
+  };
+  /* =================== FIM DO BLOCO DE DADOS =================== */
+
+
   // ---------- Palette ----------
   const sage = '#9EBF9A', sageDeep='#5F7F5C', sagePale='#E4EEE1';
   const caramel = '#E3B778', caramelDeep='#A8763F', caramelPale='#F7E9D2';
@@ -443,6 +521,12 @@
   Chart.defaults.color = muted;
   Chart.defaults.borderColor = '#E2DECD';
 
+  // ---------- Preenche textos do hero e KPIs a partir de SITE_DATA ----------
+  document.querySelectorAll('[data-field]').forEach(el => {
+    const key = el.getAttribute('data-field');
+    if (SITE_DATA[key] !== undefined) el.textContent = SITE_DATA[key];
+  });
+
   // ---------- Season timeline ----------
   const months = ['Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez'];
   const riskMonths = ['Out','Nov','Dez'];
@@ -450,15 +534,14 @@
   months.forEach((m, i) => {
     const el = document.createElement('div');
     el.className = 'season-month' + (riskMonths.includes(m) ? ' risk' : '');
-    const bg = i < 6 ? sagePale : caramelPale;
     el.style.background = i < 6 ? '#E4EEE1' : '#F7E9D2';
     el.innerHTML = '<span>' + m + '</span>';
     track.appendChild(el);
   });
 
-  const seasonStart = new Date(2026, 3, 1);   // 1 abr 2026
-  const seasonEnd   = new Date(2026, 11, 15); // 15 dez 2026 (estimado)
-  let today = new Date(2026, 6, 6); // 6 jul 2026 — data de referência da safra
+  const seasonStart = new Date(SITE_DATA.safraInicio + 'T00:00:00');
+  const seasonEnd   = new Date(SITE_DATA.safraFimEstimado + 'T00:00:00');
+  const today       = new Date(SITE_DATA.hoje + 'T00:00:00');
   const clampedToday = today < seasonStart ? seasonStart : (today > seasonEnd ? seasonEnd : today);
   const pct = ((clampedToday - seasonStart) / (seasonEnd - seasonStart)) * 100;
 
@@ -475,10 +558,10 @@
   new Chart(document.getElementById('chartMoagem'), {
     type: 'bar',
     data: {
-      labels: ['2023/24', '2024/25', '2025/26', '2026/27 (proj.)'],
+      labels: SITE_DATA.moagemLabels,
       datasets: [{
         label: 'Moagem (Mt)',
-        data: [ 597.4, 621.93, 611.15, 632 ],
+        data: SITE_DATA.moagemValores,
         backgroundColor: [sagePale, sage, sage, caramel],
         borderRadius: 8,
         maxBarThickness: 56
@@ -499,7 +582,7 @@
     data: {
       labels: ['Açúcar', 'Etanol'],
       datasets: [{
-        data: [48, 52],
+        data: [SITE_DATA.mixAcucarPct, SITE_DATA.mixEtanolPct],
         backgroundColor: [caramel, sage],
         borderWidth: 0
       }]
@@ -517,7 +600,7 @@
       labels: ['Hidratado', 'Anidro'],
       datasets: [{
         label: 'bi litros',
-        data: [20.83, 12.89],
+        data: [SITE_DATA.etanolHidratado, SITE_DATA.etanolAnidro],
         backgroundColor: [sky, skyDeep],
         borderRadius: 8,
         maxBarThickness: 60
@@ -534,10 +617,10 @@
   new Chart(document.getElementById('chartQuinzena'), {
     type: 'bar',
     data: {
-      labels: ['1ª quinz. abr — 2025/26', '1ª quinz. abr — 2026/27'],
+      labels: [SITE_DATA.quinzenaLabelAnterior, SITE_DATA.quinzenaLabelAtual],
       datasets: [{
         label: 'Mt processadas',
-        data: [16.68, 19.56],
+        data: [SITE_DATA.quinzenaValorAnterior, SITE_DATA.quinzenaValorAtual],
         backgroundColor: [coralPale, coral],
         borderRadius: 8,
         maxBarThickness: 60
@@ -553,10 +636,10 @@
   new Chart(document.getElementById('chartRegional'), {
     type: 'bar',
     data: {
-      labels: ['Paraná', 'Mato Grosso do Sul', 'Mato Grosso', 'São Paulo', 'Goiás', 'Minas Gerais'],
+      labels: SITE_DATA.regionalLabels,
       datasets: [{
         label: 'Variação de produtividade (%)',
-        data: [15.5, 6.0, 3.2, -4.3, -9.4, -15.9],
+        data: SITE_DATA.regionalValores,
         backgroundColor: (ctx) => ctx.raw >= 0 ? sage : coral,
         borderRadius: 8
       }]
@@ -572,11 +655,11 @@
   new Chart(document.getElementById('chartChuva'), {
     type: 'line',
     data: {
-      labels: ['Out', 'Nov', 'Dez', 'Jan', 'Fev', 'Mar'],
+      labels: SITE_DATA.chuvaLabels,
       datasets: [
         {
           label: 'Média histórica',
-          data: [100, 100, 100, 100, 100, 100],
+          data: SITE_DATA.chuvaMedia,
           borderColor: '#C9C5B2',
           borderDash: [5,5],
           pointRadius: 0,
@@ -584,7 +667,7 @@
         },
         {
           label: 'Cenário El Niño 2026',
-          data: [96, 90, 82, 74, 80, 88],
+          data: SITE_DATA.chuvaCenario,
           borderColor: skyDeep,
           backgroundColor: 'rgba(167,198,212,0.25)',
           fill: true,
