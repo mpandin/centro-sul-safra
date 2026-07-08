@@ -10,23 +10,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <style>
   :root{
-    --bg: #F6F4EA;
+    --bg: #C6CBD1;
     --surface: #FFFFFF;
-    --sage: #9EBF9A;
-    --sage-deep: #5F7F5C;
-    --sage-pale: #E4EEE1;
-    --caramel: #E3B778;
-    --caramel-deep: #A8763F;
-    --caramel-pale: #F7E9D2;
-    --sky: #A7C6D4;
-    --sky-deep: #4C7E92;
-    --sky-pale: #E4EFF3;
-    --coral: #E19A8C;
-    --coral-deep: #A85B4C;
-    --coral-pale: #F6E1DB;
+    --sage: #3FA35C;
+    --sage-deep: #1F6B3B;
+    --sage-pale: #CFEBD5;
+    --caramel: #F0A22E;
+    --caramel-deep: #C06A0C;
+    --caramel-pale: #FBDFA6;
+    --sky: #2E93C4;
+    --sky-deep: #0F5E85;
+    --sky-pale: #C7E6F2;
+    --coral: #E85C43;
+    --coral-deep: #B7331D;
+    --coral-pale: #F8CBBF;
     --ink: #32362B;
     --muted: #6E7266;
-    --line: #E2DECD;
+    --line: #A9AFB6;
     --radius: 14px;
   }
   *{box-sizing:border-box;}
@@ -55,7 +55,7 @@
   /* ---------- HEADER ---------- */
   header{
     position:sticky; top:0; z-index:50;
-    background:rgba(246,244,234,0.9);
+    background:rgba(198,203,209,0.9);
     backdrop-filter:blur(8px);
     border-bottom:1px solid var(--line);
   }
@@ -511,15 +511,15 @@
 
 
   // ---------- Palette ----------
-  const sage = '#9EBF9A', sageDeep='#5F7F5C', sagePale='#E4EEE1';
-  const caramel = '#E3B778', caramelDeep='#A8763F', caramelPale='#F7E9D2';
-  const sky = '#A7C6D4', skyDeep='#4C7E92', skyPale='#E4EFF3';
-  const coral = '#E19A8C', coralDeep='#A85B4C', coralPale='#F6E1DB';
+  const sage = '#3FA35C', sageDeep='#1F6B3B', sagePale='#CFEBD5';
+  const caramel = '#F0A22E', caramelDeep='#C06A0C', caramelPale='#FBDFA6';
+  const sky = '#2E93C4', skyDeep='#0F5E85', skyPale='#C7E6F2';
+  const coral = '#E85C43', coralDeep='#B7331D', coralPale='#F8CBBF';
   const muted = '#6E7266';
 
   Chart.defaults.font.family = "'Inter', sans-serif";
   Chart.defaults.color = muted;
-  Chart.defaults.borderColor = '#E2DECD';
+  Chart.defaults.borderColor = '#A9AFB6';
 
   // ---------- Preenche textos do hero e KPIs a partir de SITE_DATA ----------
   document.querySelectorAll('[data-field]').forEach(el => {
@@ -534,7 +534,7 @@
   months.forEach((m, i) => {
     const el = document.createElement('div');
     el.className = 'season-month' + (riskMonths.includes(m) ? ' risk' : '');
-    el.style.background = i < 6 ? '#E4EEE1' : '#F7E9D2';
+    el.style.background = i < 6 ? '#CFEBD5' : '#FBDFA6';
     el.innerHTML = '<span>' + m + '</span>';
     track.appendChild(el);
   });
@@ -570,7 +570,7 @@
     options: {
       plugins:{ legend:{ display:false } },
       scales:{
-        y:{ beginAtZero:false, min:560, grid:{ color:'#EDEADD' } },
+        y:{ beginAtZero:false, min:560, grid:{ color:'#B7BCC3' } },
         x:{ grid:{ display:false } }
       }
     }
@@ -609,7 +609,7 @@
     options: {
       indexAxis: 'y',
       plugins:{ legend:{ display:false } },
-      scales:{ x:{ grid:{ color:'#EDEADD' } }, y:{ grid:{ display:false } } }
+      scales:{ x:{ grid:{ color:'#B7BCC3' } }, y:{ grid:{ display:false } } }
     }
   });
 
@@ -628,7 +628,7 @@
     },
     options: {
       plugins:{ legend:{ display:false } },
-      scales:{ y:{ grid:{ color:'#EDEADD' } }, x:{ grid:{ display:false } } }
+      scales:{ y:{ grid:{ color:'#B7BCC3' } }, x:{ grid:{ display:false } } }
     }
   });
 
@@ -647,7 +647,7 @@
     options: {
       indexAxis: 'y',
       plugins:{ legend:{ display:false } },
-      scales:{ x:{ grid:{ color:'#EDEADD' } }, y:{ grid:{ display:false } } }
+      scales:{ x:{ grid:{ color:'#B7BCC3' } }, y:{ grid:{ display:false } } }
     }
   });
 
@@ -660,7 +660,7 @@
         {
           label: 'Média histórica',
           data: SITE_DATA.chuvaMedia,
-          borderColor: '#C9C5B2',
+          borderColor: '#9BA1A8',
           borderDash: [5,5],
           pointRadius: 0,
           borderWidth: 2
@@ -669,7 +669,7 @@
           label: 'Cenário El Niño 2026',
           data: SITE_DATA.chuvaCenario,
           borderColor: skyDeep,
-          backgroundColor: 'rgba(167,198,212,0.25)',
+          backgroundColor: 'rgba(46,147,196,0.22)',
           fill: true,
           tension: 0.4,
           pointBackgroundColor: skyDeep,
@@ -680,7 +680,7 @@
     },
     options: {
       plugins:{ legend:{ position:'bottom', labels:{ boxWidth:10, boxHeight:10, padding:16 } } },
-      scales:{ y:{ grid:{ color:'#EDEADD' }, title:{ display:true, text:'Índice (100 = média)' } }, x:{ grid:{ display:false } } }
+      scales:{ y:{ grid:{ color:'#B7BCC3' }, title:{ display:true, text:'Índice (100 = média)' } }, x:{ grid:{ display:false } } }
     }
   });
 </script>
