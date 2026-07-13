@@ -190,6 +190,20 @@
   /* ---------- REGIONAL ---------- */
   .regional-note{ font-size:0.85rem; color:var(--muted); margin-top:10px; }
 
+  /* ---------- NEWS CARDS ---------- */
+  .news-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .news-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:24px; display:flex; flex-direction:column;
+  }
+  .news-card .tag{
+    font-family:'IBM Plex Mono', monospace; font-size:0.7rem; text-transform:uppercase;
+    letter-spacing:.05em; margin-bottom:10px; display:block;
+  }
+  .news-card h3{ font-family:'Fraunces', serif; font-size:1.15rem; font-weight:600; margin-bottom:10px; line-height:1.25; }
+  .news-card p{ font-size:0.9rem; color:var(--muted); margin:0 0 16px; flex-grow:1; }
+  .news-meta{ display:flex; justify-content:space-between; font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--muted); border-top:1px solid var(--line); padding-top:12px; }
+
   /* ---------- FOOTER ---------- */
   footer{ border-top:1px solid var(--line); padding:34px 0 40px; margin-top:30px; }
   .footer-grid{ display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; }
@@ -197,7 +211,7 @@
   footer .sources b{ color:var(--ink); }
 
   @media (max-width: 860px){
-    .hero-grid, .charts-grid, .forecast-grid, .two-col{ grid-template-columns:1fr; }
+    .hero-grid, .charts-grid, .forecast-grid, .two-col, .news-grid{ grid-template-columns:1fr; }
     .kpi-grid{ grid-template-columns:repeat(2,1fr); }
     .climate-cards{ grid-template-columns:1fr; }
     nav ul{ display:none; }
@@ -219,6 +233,7 @@
       <ul>
         <li><a href="#painel">Painel</a></li>
         <li><a href="#regioes">Regiões</a></li>
+        <li><a href="#noticias">Notícias</a></li>
         <li><a href="#clima">Clima</a></li>
         <li><a href="#previsao">Previsão 2026</a></li>
       </ul>
@@ -340,6 +355,33 @@
       <div class="chart-box" style="height:300px;"><canvas id="chartRegional"></canvas></div>
       <p class="regional-note">São Paulo, Goiás e Minas Gerais recuaram com o déficit hídrico do período de crescimento; Mato Grosso, Mato Grosso do Sul e Paraná — que seguiram calendário de chuvas mais regular — avançaram.</p>
     </div>
+  </div>
+</section>
+
+<section id="noticias">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">No radar do mercado</div>
+      <h2>Destaques recentes: açúcar VHP e etanol</h2>
+      <p>Seleção de notícias do setor com impacto direto na formação de preços e no ritmo de exportação da safra em curso.</p>
+    </div>
+
+    <div class="news-grid">
+      <article class="news-card">
+        <span class="tag" style="color:var(--caramel-deep);">Açúcar VHP · Exportação</span>
+        <h3>Fila de navios reforça ritmo de embarques de açúcar VHP</h3>
+        <p>Na primeira semana de julho, cerca de 50 navios aguardavam carregamento de açúcar nos portos brasileiros, com um volume próximo de 2,18 milhões de toneladas programado para embarque — a maior parte açúcar VHP destinado à exportação. O escoamento se concentra nos portos de Santos (SP) e Paranaguá (PR), reflexo do ritmo forte de moagem do início da safra 2026/27.</p>
+        <div class="news-meta"><span>Safras &amp; Mercado</span><span>10 de julho de 2026</span></div>
+      </article>
+
+      <article class="news-card">
+        <span class="tag" style="color:var(--sky-deep);">Preços · Açúcar × Etanol</span>
+        <h3>Açúcar sobe nas bolsas; etanol ganha competitividade no país</h3>
+        <p>As cotações internacionais do açúcar avançaram no fim de junho, impulsionadas pela leitura de uma oferta global mais apertada e por riscos climáticos sobre regiões produtoras-chave. No mercado interno, a expectativa de uma safra recorde no Centro-Sul e preços mais competitivos têm sustentado o avanço do etanol frente à gasolina.</p>
+        <div class="news-meta"><span>Notícias Agrícolas</span><span>29 de junho de 2026</span></div>
+      </article>
+    </div>
+    <p class="regional-note" style="margin-top:14px;">Resumos elaborados a partir das fontes citadas; para o conteúdo completo, consulte os veículos originais.</p>
   </div>
 </section>
 
