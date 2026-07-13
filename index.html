@@ -233,9 +233,9 @@
       <h1>O ritmo da moagem, do açúcar e do etanol, safra a safra.</h1>
       <p class="lede">Acompanhe a produção das usinas do Centro-Sul, a evolução da moagem quinzenal, os efeitos climáticos sobre o canavial e a previsão de encerramento da safra 2026.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b class="mono" data-field="heroMoagemProjetada">625–639 Mt</b><span>moagem projetada 2026/27</span></div>
-        <div class="hero-stat"><b class="mono" data-field="heroVariacaoQuinzenaAbertura">+19,7%</b><span>moagem 1ª quinz. abr/26 vs 2025</span></div>
-        <div class="hero-stat"><b class="mono" data-field="heroProdutividadeEstimada">~77 t/ha</b><span>produtividade agrícola estimada</span></div>
+        <div class="hero-stat"><b class="mono" data-field="heroMoagemProjetada">632–648 Mt</b><span>moagem projetada 2026/27</span></div>
+        <div class="hero-stat"><b class="mono" data-field="heroMoagemAcumulada">144,7 Mt</b><span>moagem acumulada até 1º/jun</span></div>
+        <div class="hero-stat"><b class="mono" data-field="heroProdutividadeEstimada">~77,5 t/ha</b><span>produtividade agrícola estimada</span></div>
       </div>
     </div>
 
@@ -307,21 +307,23 @@
       </div>
       <div class="card">
         <h3>Mix açúcar × etanol</h3>
-        <div class="card-sub">Direcionamento da cana processada</div>
+        <div class="card-sub">Projeção para o fechamento da safra (StoneX)</div>
         <div class="chart-box"><canvas id="chartMix"></canvas></div>
+        <p class="regional-note">No acumulado real até 1º/jun, o mix está ainda mais alcooleiro: 61,8% etanol / 38,2% açúcar — tende a se equilibrar ao longo da safra.</p>
       </div>
     </div>
 
     <div class="two-col">
       <div class="card">
         <h3>Etanol hidratado × anidro</h3>
-        <div class="card-sub">Bilhões de litros produzidos, 2025/26</div>
+        <div class="card-sub">Acumulado 2026/27 (bi litros, até 1º/jun)</div>
         <div class="chart-box small"><canvas id="chartEtanol"></canvas></div>
       </div>
       <div class="card">
-        <h3>Moagem quinzenal — início da safra</h3>
-        <div class="card-sub">1ª quinzena de abril, comparação entre ciclos</div>
+        <h3>Moagem quinzenal — evolução da safra</h3>
+        <div class="card-sub">Variação (%) vs. mesma quinzena da safra anterior</div>
         <div class="chart-box small"><canvas id="chartQuinzena"></canvas></div>
+        <p class="regional-note">*1ª quinzena de junho: estimativa preliminar (pesquisa S&P Global Commodity Insights), ainda não confirmada pela UNICA.</p>
       </div>
     </div>
   </div>
@@ -346,29 +348,29 @@
     <div class="climate-band">
       <div class="section-head" style="margin-bottom:0;">
         <div class="eyebrow" style="background:rgba(255,255,255,0.6);">Efeitos climáticos</div>
-        <h2>El Niño no radar da safra 2026/27</h2>
-        <p>Depois de um trimestre de neutralidade climática entre abril e junho, os modelos meteorológicos apontam a consolidação de um El Niño ao longo do segundo semestre de 2026 — com potencial para alterar o regime de chuvas sobre o canavial do Centro-Sul.</p>
+        <h2>El Niño confirmado para a safra 2026/27</h2>
+        <p>Em junho de 2026, o padrão de temperatura da superfície do Pacífico Equatorial já é típico de El Niño, segundo boletim conjunto do INPE, INMET, CEMADEN e Censipam. Os modelos apontam mais de 90% de probabilidade de o fenômeno persistir até pelo menos o início de 2027, com chance elevada de intensidade muito forte.</p>
       </div>
       <div class="climate-cards">
         <div class="climate-card">
-          <span class="tag">Chuvas irregulares</span>
-          <h4>Volumes abaixo da média</h4>
-          <p>Meses-chave de desenvolvimento com precipitação entre 50 mm e 150 mm, historicamente abaixo do padrão para a região canavieira.</p>
+          <span class="tag">Chuvas fora de época</span>
+          <h4>Junho bem acima da média</h4>
+          <p>A 1ª quinzena de junho de 2026 teve chuvas muito acima do normal em boa parte do Sudeste e Centro-Oeste — Goiânia viveu o 2º junho mais chuvoso em 65 anos, fora do padrão para o auge da colheita.</p>
         </div>
         <div class="climate-card">
-          <span class="tag">Isoporização</span>
-          <h4>Perda de qualidade da cana</h4>
-          <p>Estresse hídrico favorece a formação de tecido esponjoso no colmo, reduzindo o teor de ATR aproveitável na moagem.</p>
+          <span class="tag">Floração e perda por vento</span>
+          <h4>Risco entre julho e agosto</h4>
+          <p>StoneX e Datagro alertam para chuvas acima da média nesse período, o que pode antecipar a floração da cana e causar perdas de colmo pela ação do vento.</p>
         </div>
         <div class="climate-card">
-          <span class="tag">Floração precoce</span>
-          <h4>Atraso na maturação</h4>
-          <p>Irregularidades climáticas podem antecipar a floração da cana, comprometendo o acúmulo de açúcar nos colmos.</p>
+          <span class="tag">Padrão regional</span>
+          <h4>Sul x Centro-Norte</h4>
+          <p>Para o trimestre jul-ago-set, a previsão oficial aponta chuva acima da média no Sul (parte do Paraná) e abaixo da média no centro-norte da região canavieira (SP, GO, MG, MT, MS).</p>
         </div>
       </div>
       <div class="card" style="margin-top:22px;">
-        <h3>Chuva esperada vs. média histórica</h3>
-        <div class="card-sub">Índice ilustrativo (100 = média histórica da região), out/25–mar/26</div>
+        <h3>Previsão de chuva por região — jul/ago/set 2026</h3>
+        <div class="card-sub">Anomalia esperada frente à média histórica (índice ilustrativo, com base em boletim oficial INPE/INMET/CPC-NOAA)</div>
         <div class="chart-box"><canvas id="chartChuva"></canvas></div>
       </div>
     </div>
@@ -386,36 +388,37 @@
     <div class="forecast-grid">
       <div class="card gauge-wrap">
         <h3 style="align-self:flex-start;">Faixa de moagem projetada</h3>
-        <div class="card-sub" style="align-self:flex-start;">Milhões de toneladas, safra 2026/27</div>
+        <div class="card-sub" style="align-self:flex-start;">Milhões de toneladas, safra 2026/27 — StoneX × Datagro (jun/26)</div>
         <div class="range-bar">
           <div style="width:20%; background:var(--sage-pale);"></div>
           <div style="width:60%; background:var(--sage);"></div>
           <div style="width:20%; background:var(--caramel);"></div>
         </div>
         <div class="range-labels" style="width:100%;">
-          <span>600 Mt</span><span>~630 Mt</span><span>639 Mt</span>
+          <span>620 Mt</span><span>~640 Mt</span><span>655 Mt</span>
         </div>
       </div>
 
       <ul class="forecast-list">
         <li>
           <span class="dot" style="background:var(--sage-deep);"></span>
-          <div><b>Encerramento estimado: novembro–dezembro de 2026</b><span>Seguindo o padrão histórico do Centro-Sul, a maior parte das unidades deve concluir a moagem entre a segunda quinzena de novembro e meados de dezembro, podendo se estender em polos de Goiás e Mato Grosso do Sul.</span></div>
+          <div><b>Possível recorde histórico</b><span>No cenário mais otimista da Datagro (655 Mt), a safra superaria o recorde de 654,43 Mt já registrado pelo Centro-Sul. A UNICA já contabiliza 144,7 Mt moídas até 1º de junho.</span></div>
         </li>
         <li>
           <span class="dot" style="background:var(--caramel-deep);"></span>
-          <div><b>Produtividade em recuperação: ~77 t/ha</b><span>Rejuvenescimento dos canaviais e maior área colhida (~8 milhões de hectares) sustentam a expectativa de melhora ante os 74,4 t/ha da safra anterior.</span></div>
+          <div><b>Produtividade em recuperação: ~77,5 t/ha</b><span>Rejuvenescimento dos canaviais, maior área colhida (~8 milhões de hectares) e recomposição de áreas queimadas em 2024 sustentam a melhora ante os 74,4 t/ha da safra anterior.</span></div>
         </li>
         <li>
           <span class="dot" style="background:var(--sky-deep);"></span>
-          <div><b>Mix mais alcooleiro</b><span>Com a demanda por etanol hidratado em alta e o E30 em vigor, o direcionamento da cana para o etanol tende a crescer frente à safra encerrada.</span></div>
+          <div><b>Mix mais alcooleiro</b><span>O mix açucareiro projetado caiu para 48,7% (ante 49,3% na estimativa anterior) — no acumulado até 1º/jun, o direcionamento ao etanol já chega a 61,8%, bem acima da safra passada.</span></div>
         </li>
         <li>
           <span class="dot" style="background:var(--coral-deep);"></span>
-          <div><b>Risco climático concentrado no 2º semestre</b><span>A consolidação do El Niño a partir do segundo semestre é o principal fator de incerteza sobre o ritmo final da colheita.</span></div>
+          <div><b>Moagem perde ritmo nas últimas quinzenas</b><span>Depois de um início recorde em abril, a moagem já mostra queda de 13,1% na 2ª quinzena de maio frente ao ano anterior — atenção ao possível efeito das chuvas fora de época associadas ao El Niño.</span></div>
         </li>
       </ul>
     </div>
+    <p class="regional-note" style="margin-top:14px;">Fontes: UNICA (moagem realizada), StoneX (revisão de mai/26) e Datagro (revisão de jun/26). O cenário otimista da Datagro (655 Mt) depende de as chuvas não interromperem significativamente a moagem até dezembro.</p>
   </div>
 </section>
 
@@ -428,7 +431,7 @@
       </svg>
       <div class="brand-name">centro-sul<span>.safra</span></div>
     </div>
-    <p class="sources"><b>Fontes:</b> UNICA / UnicaData, Centro de Tecnologia Canavieira (CTC), Datagro, SCA Brasil, StoneX. Dados consolidados até abr/2026; projeções para 2026/27 são estimativas de mercado e podem mudar conforme a evolução da safra e do clima. Página produzida para fins ilustrativos.</p>
+    <p class="sources"><b>Fontes:</b> UNICA / UnicaData (moagem, açúcar e etanol realizados até a 2ª quinzena de maio/2026, acumulado a 1º/jun), Centro de Tecnologia Canavieira (CTC), StoneX (revisão mai/26), Datagro (revisão jun/26), S&P Global Commodity Insights (estimativa preliminar da 1ª quinz. jun/26), e boletim conjunto INPE/INMET/ANA/CEMADEN/SGB/SEDEC sobre El Niño 2026. Última atualização: 08/07/2026. Projeções podem mudar conforme a evolução da safra e do clima. Página produzida para fins ilustrativos.</p>
   </div>
 </footer>
 
@@ -441,10 +444,10 @@
   const SITE_DATA = {
 
     // Data do último boletim usado para preencher este arquivo.
-    ultimaAtualizacao: '2026-07-06',
+    ultimaAtualizacao: '2026-07-08',
 
     // Data de referência "hoje" mostrada na barra de calendário da safra.
-    hoje: '2026-07-06',
+    hoje: '2026-07-08',
 
     // Janela oficial da safra 2026/27. Início: UNICA (1º de abril).
     // Fim: estimativa de mercado, ajuste conforme boletins apontarem.
@@ -452,60 +455,63 @@
     safraFimEstimado: '2026-12-15',
 
     // ---- Cartões de destaque no topo (hero) ----
-    // Fonte: UNICA (moagem quinzenal) + Datagro/SCA Brasil (projeção)
-    heroMoagemProjetada: '625–639 Mt',
-    heroVariacaoQuinzenaAbertura: '+19,7%',
-    heroProdutividadeEstimada: '~77 t/ha',
+    // Fonte: StoneX (mai/26) + Datagro (jun/26) para projeção de moagem;
+    // UNICA para o acumulado real da safra em curso
+    heroMoagemProjetada: '632–648 Mt',
+    heroMoagemAcumulada: '144,7 Mt',
+    heroProdutividadeEstimada: '~77,5 t/ha',
 
     // ---- KPIs: PROJEÇÃO da safra EM CURSO (2026/27) vs. REALIZADO 2025/26 ----
-    // Projeções: Datagro / SCA Brasil. Base de comparação (2025/26): UNICA, fechamento de safra.
-    // >>> Conforme cada quinzena de 2026/27 for divulgada pela UNICA, ajuste estes valores <<<
-    kpiMoagemTotal: '632 Mt',
-    kpiMoagemVariacao: '▴ 3,4% vs 2025/26',
-    kpiAcucarTotal: '41,5 Mt',
-    kpiAcucarVariacao: '▴ 2,6% vs 2025/26',
-    kpiEtanolTotal: '35,3 bi L',
-    kpiEtanolVariacao: '▴ 4,7% vs 2025/26',
-    kpiAtrMedio: '139,5 kg/t',
-    kpiAtrVariacao: '▴ 1,2% vs 2025/26',
+    // Moagem/açúcar/etanol: média StoneX (mai/26) + Datagro (jun/26).
+    // ATR: Datagro/StoneX. Base de comparação (2025/26): UNICA, fechamento de safra.
+    // >>> Atualize a cada nova quinzena divulgada pela UNICA <<<
+    kpiMoagemTotal: '~640 Mt',
+    kpiMoagemVariacao: '▴ 4,7% vs 2025/26',
+    kpiAcucarTotal: '~40 Mt',
+    kpiAcucarVariacao: '▾ 1,1% vs 2025/26',
+    kpiEtanolTotal: '37,2 bi L',
+    kpiEtanolVariacao: '▴ 10,2% vs 2025/26',
+    kpiAtrMedio: '138,8 kg/t',
+    kpiAtrVariacao: '▴ 0,7% vs 2025/26',
 
     // ---- Gráfico: moagem histórica + projeção (Mt) ----
-    // Fonte: UNICA (histórico) + Datagro/SCA Brasil (projeção 2026/27)
+    // Fonte: UNICA (histórico) + StoneX/Datagro (projeção 2026/27, revisão jun/26)
     moagemLabels: ['2023/24', '2024/25', '2025/26', '2026/27 (proj.)'],
-    moagemValores: [597.4, 621.93, 611.15, 632],
+    moagemValores: [597.4, 621.93, 611.15, 640],
 
-    // ---- Gráfico: mix açúcar x etanol (%) — safra em curso ----
-    // Fonte: SCA Brasil / Datagro
-    mixAcucarPct: 48,
-    mixEtanolPct: 52,
+    // ---- Gráfico: mix açúcar x etanol (%) — projeção para a safra fechada ----
+    // Fonte: StoneX, revisão de maio/2026
+    mixAcucarPct: 48.7,
+    mixEtanolPct: 51.3,
 
-    // ---- Gráfico: etanol hidratado x anidro (bi litros) — 2025/26 ----
-    // Fonte: UNICA, boletim de fechamento de safra
-    etanolHidratado: 20.83,
-    etanolAnidro: 12.89,
+    // ---- Gráfico: etanol hidratado x anidro — ACUMULADO safra 2026/27 (até 1º/jun) ----
+    // Fonte: UNICA, boletim da 2ª quinzena de maio/2026
+    etanolHidratado: 4.96,
+    etanolAnidro: 2.58,
 
-    // ---- Gráfico: moagem quinzenal de abertura de safra (Mt) ----
-    // Fonte: UNICA — este é o número que muda a cada nova quinzena
-    quinzenaLabelAnterior: '1ª quinz. abr — 2025/26',
-    quinzenaValorAnterior: 16.68,
-    quinzenaLabelAtual: '1ª quinz. abr — 2026/27',
-    quinzenaValorAtual: 19.56,
+    // ---- Gráfico: moagem quinzenal — variação % vs mesma quinzena da safra anterior ----
+    // Fonte: UNICA (quinzenas oficiais) + Ministério da Agricultura/Reuters (1ª quinz. maio)
+    // + pesquisa S&P Global Commodity Insights (1ª quinz. junho — estimativa preliminar,
+    // ainda não confirmada pela UNICA)
+    // >>> Este é o gráfico que muda a cada nova quinzena divulgada <<<
+    quinzenaLabels: ['1ª abr', '2ª abr', '1ª mai', '2ª mai', '1ª jun*'],
+    quinzenaValores: [19.67, 123.0, 1.4, -13.08, -1.3],
 
     // ---- Gráfico: panorama regional — variação de produtividade (%) ----
-    // Fonte: CTC (Centro de Tecnologia Canavieira), via UNICA
+    // Fonte: CTC (Centro de Tecnologia Canavieira), via UNICA — safra 2025/26 encerrada
     regionalLabels: ['Paraná', 'Mato Grosso do Sul', 'Mato Grosso', 'São Paulo', 'Goiás', 'Minas Gerais'],
     regionalValores: [15.5, 6.0, 3.2, -4.3, -9.4, -15.9],
 
-    // ---- Gráfico: chuva esperada vs média histórica (índice, 100=média) ----
-    // Fonte: estimativa ilustrativa com base em boletins climáticos
-    chuvaLabels: ['Out', 'Nov', 'Dez', 'Jan', 'Fev', 'Mar'],
-    chuvaMedia: [100, 100, 100, 100, 100, 100],
-    chuvaCenario: [96, 90, 82, 74, 80, 88],
+    // ---- Gráfico: previsão de chuva por região — trimestre jul/ago/set 2026 ----
+    // Fonte: Boletim El Niño nº1 (INPE/INMET/ANA/CEMADEN/SGB/SEDEC), com base em CPC/NOAA
+    // Índice ilustrativo: valores positivos = acima da média; negativos = abaixo da média
+    chuvaLabels: ['Paraná (Sul)', 'Mato Grosso do Sul', 'São Paulo', 'Minas Gerais', 'Goiás', 'Mato Grosso'],
+    chuvaValores: [18, 6, -10, -14, -16, -12],
 
     // ---- Previsão de fim de safra (cartões de texto) ----
-    faixaMoagemMin: '600 Mt',
-    faixaMoagemMedia: '~630 Mt',
-    faixaMoagemMax: '639 Mt'
+    faixaMoagemMin: '620 Mt',
+    faixaMoagemMedia: '~640 Mt',
+    faixaMoagemMax: '655 Mt'
   };
   /* =================== FIM DO BLOCO DE DADOS =================== */
 
@@ -593,13 +599,13 @@
     }
   });
 
-  // ---------- Etanol hidratado x anidro ----------
+  // ---------- Etanol hidratado x anidro (acumulado 2026/27) ----------
   new Chart(document.getElementById('chartEtanol'), {
     type: 'bar',
     data: {
       labels: ['Hidratado', 'Anidro'],
       datasets: [{
-        label: 'bi litros',
+        label: 'bi litros (acum. 26/27)',
         data: [SITE_DATA.etanolHidratado, SITE_DATA.etanolAnidro],
         backgroundColor: [sky, skyDeep],
         borderRadius: 8,
@@ -613,17 +619,17 @@
     }
   });
 
-  // ---------- Moagem quinzenal (abertura da safra) ----------
+  // ---------- Moagem quinzenal — variação % por quinzena ----------
   new Chart(document.getElementById('chartQuinzena'), {
     type: 'bar',
     data: {
-      labels: [SITE_DATA.quinzenaLabelAnterior, SITE_DATA.quinzenaLabelAtual],
+      labels: SITE_DATA.quinzenaLabels,
       datasets: [{
-        label: 'Mt processadas',
-        data: [SITE_DATA.quinzenaValorAnterior, SITE_DATA.quinzenaValorAtual],
-        backgroundColor: [coralPale, coral],
+        label: 'Variação (%)',
+        data: SITE_DATA.quinzenaValores,
+        backgroundColor: (ctx) => ctx.raw >= 0 ? coral : coralPale,
         borderRadius: 8,
-        maxBarThickness: 60
+        maxBarThickness: 46
       }]
     },
     options: {
@@ -651,36 +657,25 @@
     }
   });
 
-  // ---------- Chuva vs média histórica ----------
+  // ---------- Previsão de chuva por região (jul-ago-set 2026) ----------
   new Chart(document.getElementById('chartChuva'), {
-    type: 'line',
+    type: 'bar',
     data: {
       labels: SITE_DATA.chuvaLabels,
-      datasets: [
-        {
-          label: 'Média histórica',
-          data: SITE_DATA.chuvaMedia,
-          borderColor: '#9BA1A8',
-          borderDash: [5,5],
-          pointRadius: 0,
-          borderWidth: 2
-        },
-        {
-          label: 'Cenário El Niño 2026',
-          data: SITE_DATA.chuvaCenario,
-          borderColor: skyDeep,
-          backgroundColor: 'rgba(46,147,196,0.22)',
-          fill: true,
-          tension: 0.4,
-          pointBackgroundColor: skyDeep,
-          pointRadius: 4,
-          borderWidth: 3
-        }
-      ]
+      datasets: [{
+        label: 'Anomalia de chuva (índice)',
+        data: SITE_DATA.chuvaValores,
+        backgroundColor: (ctx) => ctx.raw >= 0 ? sky : coral,
+        borderRadius: 8
+      }]
     },
     options: {
-      plugins:{ legend:{ position:'bottom', labels:{ boxWidth:10, boxHeight:10, padding:16 } } },
-      scales:{ y:{ grid:{ color:'#B7BCC3' }, title:{ display:true, text:'Índice (100 = média)' } }, x:{ grid:{ display:false } } }
+      indexAxis: 'y',
+      plugins:{ legend:{ display:false } },
+      scales:{
+        x:{ grid:{ color:'#B7BCC3' }, title:{ display:true, text:'◂ abaixo da média · acima da média ▸' } },
+        y:{ grid:{ display:false } }
+      }
     }
   });
 </script>
