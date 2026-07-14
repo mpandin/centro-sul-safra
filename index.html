@@ -191,7 +191,7 @@
   .regional-note{ font-size:0.85rem; color:var(--muted); margin-top:10px; }
 
   /* ---------- NEWS CARDS ---------- */
-  .news-grid{ display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .news-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px; }
   .news-card{
     background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
     padding:24px; display:flex; flex-direction:column;
@@ -203,6 +203,8 @@
   .news-card h3{ font-family:'Fraunces', serif; font-size:1.15rem; font-weight:600; margin-bottom:10px; line-height:1.25; }
   .news-card p{ font-size:0.9rem; color:var(--muted); margin:0 0 16px; flex-grow:1; }
   .news-meta{ display:flex; justify-content:space-between; font-family:'IBM Plex Mono', monospace; font-size:0.72rem; color:var(--muted); border-top:1px solid var(--line); padding-top:12px; }
+  .news-card .read-more{ font-size:0.82rem; font-weight:600; color:var(--sky-deep); text-decoration:none; margin-bottom:12px; display:inline-block; }
+  .news-card .read-more:hover{ text-decoration:underline; }
 
   /* ---------- FOOTER ---------- */
   footer{ border-top:1px solid var(--line); padding:34px 0 40px; margin-top:30px; }
@@ -379,6 +381,14 @@
         <h3>Açúcar sobe nas bolsas; etanol ganha competitividade no país</h3>
         <p>As cotações internacionais do açúcar avançaram no fim de junho, impulsionadas pela leitura de uma oferta global mais apertada e por riscos climáticos sobre regiões produtoras-chave. No mercado interno, a expectativa de uma safra recorde no Centro-Sul e preços mais competitivos têm sustentado o avanço do etanol frente à gasolina.</p>
         <div class="news-meta"><span>Notícias Agrícolas</span><span>29 de junho de 2026</span></div>
+      </article>
+
+      <article class="news-card">
+        <span class="tag" style="color:var(--coral-deep);">Política de combustíveis · E32</span>
+        <h3>Governo avalia elevar etanol na gasolina de 30% para 32%</h3>
+        <p>O Conselho Nacional de Política Energética (CNPE) analisa aumentar a mistura obrigatória de etanol anidro na gasolina, do atual E30 para E32, como forma de reduzir a dependência de gasolina importada e amortecer o efeito da variação do preço internacional do petróleo. Especialistas alertam que carros mais antigos ou importados, sem calibração específica para esse teor, podem sofrer maior desgaste em bomba de combustível, bicos injetores e componentes metálicos, além de perda de potência — risco concentrado em veículos com cerca de 20 a 30 anos de fabricação. Anfavea e Sindipeças defendem testes de engenharia adicionais antes da adoção da medida.</p>
+        <a class="read-more" href="https://g1.globo.com/carros/noticia/2026/07/14/etanol-na-gasolina-veja-quais-carros-podem-sentir-os-efeitos.ghtml" target="_blank" rel="noopener">Leia a matéria completa →</a>
+        <div class="news-meta"><span>g1 Carros</span><span>14 de julho de 2026</span></div>
       </article>
     </div>
     <p class="regional-note" style="margin-top:14px;">Resumos elaborados a partir das fontes citadas; para o conteúdo completo, consulte os veículos originais.</p>
